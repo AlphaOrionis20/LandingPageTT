@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: #222222;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+.entrar{
+    background-color: #105F74;
+    color: #FFFFFF;
+    height: 3.125em;
+    width: 25em;
+    border-radius: 8px;
+    border:none;
+    font-style: normal;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+.termos a{
+    color: #105F74;
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+.registrar{
+    background-color: #FFFFFF;
+    color: #105F74;
+    height: 3.125em;
+    border-radius: 8px;
+    border:none;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5em;
+    cursor: pointer;
+    text-decoration: none;
+}
+.registrar a:visited{
+    color: #105F74;
+}
+.card-login{
+    border-radius: 20px;
+    background: #FFFFFF;
+    padding: 3.125em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+fieldset{
+    width: 23em;
+    border-radius: 8px;
+    margin: 10px;
+    position: relative;
+}
+fieldset i{
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    color: #222222;
+}
+input{
+    outline: 0;
+}

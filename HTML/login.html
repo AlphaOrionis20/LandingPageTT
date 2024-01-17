@@ -5,7 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta nome="viewport" content="width=device-width", initial-scale="1.0">
         <title>Landing Page</title>
-        <link rel="stylesheet" href="../CSS/main.css">
+        <link rel="stylesheet" href="../CSS/login.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
     <body>
         <div class="main-login">
@@ -32,15 +33,17 @@
                     <div class="textfield">
                         <fieldset>
                         <legend>Senha</legend>
-                        <input style="border:none;" type="password" name="senha" placeholder="*********">
+                        <input style="border:none;" type="password" id="senha" placeholder="*********">
+                        <i class="bi bi-eye" id="btn-senha" onclick="mostrarSenha()"></i>
                         </fieldset>
                     </div>
                     <p>Esqueci minha senha</p>
                     <button class="entrar">Entrar</button>
-                    <button class="registrar">Registrar</button>
-                    <p>Li e estou de acordo com os <a>Termos</a> e <a>Condições de uso</a>.</p>
+                    <button class="registrar"><a class="registrar" href="register.html">Registrar</a></button>
+                    <p class="termos">Li e estou de acordo com os <a>Termos</a> e <a>Condições de uso</a>.</p>
                 </div>
             </div>
-        </div>
+        </div>  
+        <script src="../JAVASCRIPT/login.js"></script>
     </body>
 </html>
