@@ -1,17 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 body{
     background-color: #222222;
-    height: 5000px;
     margin: 0;
+    height: 100vh;
     display: flex;
+    font-family: 'Inter', sans-serif;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-#menu{
+.menu{
+    display: grid;
+    grid-template-columns: 10% 65% auto;
     align-items: center;
-    display: flex;
-    position: fixed;
+    position: sticky;
+    position: -webkit-sticky;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 90px;
     background-color: #222222;
     padding-left: 35px;
@@ -52,8 +66,10 @@ a{
     color: #fff;
 }
 .sidebar-left{
-    position: fixed;
+    position: sticky;
+    position: -webkit-sticky;
     top: 90px;
+    left: 0;
     flex-direction: column;
     align-items: flex-start;
     width: 190px;
@@ -87,9 +103,10 @@ a{
     font-size: 30px;
 }
 .sidebar-right{
-    position: fixed;
-    left: 75%;
+    position: sticky;
+    position: -webkit-sticky;
     top: 90px;
+    left: 0;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-end;
@@ -124,7 +141,58 @@ a{
     font-size: 30px;
 }
 .usuarios{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    display: inline-flex;
+}
+.usuarios > a{
+    color: #22A2F2;
+
+}
+.pessoas{
+    font-size: 14px;
+    color: #fff;
+}
+.a{
+    color: #22A2F2;
+}
+.usuario-topo{
+    margin-left: 160px;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    height: 48px;
+    width: 150px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 24px;
+    transition: all 0.3s;
+}
+.usuario-topo i{
+    position: relative;
+    font-size: 30px;
+    
+}
+.usuario-topo:hover{
+    background: rgba(250, 250, 250, 0.08);
+}
+.box{
+    height: 48px;
+    width: 150px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;     
+    line-height: 1;
+    gap: 10px;
+}
+.caixa-publicar{
+    border: 1.5px solid #fff;
+    width: 665px;
+    height: 142px;
+    align-items: center;
+    justify-content: center;
+}
+.publicar{
+    color: #fff;
+}
+.feed{
+    height: 1000vh;
 }
