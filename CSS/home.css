@@ -18,8 +18,8 @@ body{
     flex-wrap: wrap;
 }
 .menu{
-    display: grid;
-    grid-template-columns: 10% 65% auto;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     position: sticky;
     position: -webkit-sticky;
@@ -31,8 +31,8 @@ body{
     padding-left: 35px;
     color: #fff;
 }
-a{
-    color: #fff;
+.adicionar a{
+    color: #22A2F2;
 }
 #logo{
     float: left;
@@ -52,6 +52,9 @@ a{
     gap: 6px;
     background-color: #484848;
     border-radius: 16px;
+}
+.buscar{
+    transition: 0.3s;
 }
 .input-buscar i{
     color: #fff;
@@ -75,7 +78,7 @@ a{
     width: 190px;
     height: 100%;
     padding-left: 23px;
-    border-right: 1.5px solid #484848;
+    transition: 0.3s;
 }
 .sidebar-left button{
     height: 60px;
@@ -113,7 +116,7 @@ a{
     width: 250px;
     height: 100%;
     padding-left: 23px;
-    border-left: 1.5px solid #484848;
+    transition: 0.3s;
 }
 .sidebar-right button{
     height: 60px;
@@ -155,7 +158,7 @@ a{
     color: #22A2F2;
 }
 .usuario-topo{
-    margin-left: 160px;
+    margin-left: px;
     background-color: transparent;
     outline: 0;
     border: 0;
@@ -186,13 +189,176 @@ a{
 .caixa-publicar{
     border: 1.5px solid #fff;
     width: 665px;
-    height: 142px;
+    height: 150px;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 15px;
 }
 .publicar{
     color: #fff;
 }
 .feed{
-    height: 1000vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.publicar textarea{
+    width: 625px;
+    height: 80px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: #fff;
+    position: flex-start;
+    resize: none;
+}
+.publicar textarea::placeholder{
+    color: #c0c0c0;
+    padding: 10px 0 0 10px;
+    font-family: 'inter', sans-serif;
+}
+.postar{
+    width: 100px;
+    height: 40px;
+    background-color: #1985A1;
+    border-radius: 10px;
+    color: #f0f0f0;
+    position: flex-end;
+    cursor: pointer;
+
+}
+.icon{
+    display: flex;
+    color: #fff;
+    cursor: pointer;
+    gap: 10px;
+
+}
+.publicacao1{
+    display: flex;
+    border: 1.5px solid #fff;
+    padding: 10px 75px;
+    height: 755px;
+    flex-wrap: wrap;
+    width: 665px;
+    justify-content: space-between;
+}
+.foto1{
+    width: 510px;
+    height: 510px;
+}
+.nickname{
+    color: #fff;
+}
+.fotoPerfil{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.perfil{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.interaction{
+    font-size: 30px;
+    color: #fff;
+}
+.heart{
+    font-size: 30px;
+    color: #ff0000;
+}
+.legenda{
+    color: #fff;
+    font-family: 'inter', sans-serif;
+    width: 100%;
+
+}
+
+@media (width < 1260px) and (width > 740px){
+    .sidebar-left{
+        width:72px;
+    }
+    .sidebar-left button > span{
+        width: 50px;
+    }
+    .sidebar-left button > span > span{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .sidebar-right{
+        display: none;
+    }
+
+    .buscar{
+        width: 300px;
+    }
+}
+
+@media (width < 740px){
+    .sidebar-left{
+        width:72px;
+    }
+    .sidebar-left button > span{
+        width: 50px;
+    }
+    .sidebar-left button > span > span{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .sidebar-right{
+        display: none;
+    }
+
+    .buscar{
+        width: 300px;
+    }
+    .feed{
+        width: 70%;
+    }
+    .publicar textarea{
+        max-width: 70%;
+        min-width: 50%;
+    }
+    .publicar textarea::placeholder{
+        max-width: 70%;
+        min-width: 50%;
+    }
+    .postar{
+        max-width: 70%;
+        height: auto;
+    }
+    .icon{
+        max-width: 70%;
+        height: auto;
+    }
+    .publicacao1{
+        max-width: 70%;
+        height: auto;
+    }
+    .foto1{
+        max-width: 70%;
+        height: auto;
+    }
+    .caixa-publicar{
+        max-width: 70%;
+        min-width: 50%;
+    }
+    .interaction{
+        font-size: 1em;
+    }
+    .heart{
+        font-size: 1em;
+        color: #ff0000;
+    }
+    .legenda{
+        font-size: 1em;
+
+    }
+
 }
